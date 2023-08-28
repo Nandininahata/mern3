@@ -423,7 +423,8 @@ const foodoriginaldata= [{
 
     }
  }
- function itemProtienHigh2Low(){
+ console.log("Function that shows all the Food items with Protien high to low:")
+function itemProtienHigh2Low(){
   let a = [...foodOriginalData]
   a.sort((p1,p2)=> p2.protiens - p1.protiens)
   console.table(a)
@@ -431,15 +432,9 @@ const foodoriginaldata= [{
 itemProtienHigh2Low()
 
 console.log("Function that shows all the Food items with Cal low to high:")
-
-
-console.log("Function that shows all the Food items with Cal low to high:")
 function itemCabLow2High(){
   let a = [...foodOriginalData];
   a.sort((p1,p2)=> p1.cab - p2.cab)
   console.table(a)
 }
-  function getitemcabLow2High(){
-    foodoriginaldata.sort((c1,c2)=> c1.cab-c2.cab)
-    console.table(foodoriginaldata)
-  }
+itemCabLow2High()
