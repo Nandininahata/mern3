@@ -425,14 +425,14 @@ const foodoriginaldata= [{
  }
 console.log("Function that shows all the Food items with Protien high to low:")
 function itemProtienHigh2Low(){
-  let a = [...foodOriginalData]
+  let a = [...foodoriginaldata]
   a.sort((p1,p2)=> p2.protiens - p1.protiens)
   console.table(a)
 }
 itemProtienHigh2Low()
 console.log("Function that shows all the Food items with Cal low to high:")
 function itemCabLow2High(){
-  let a = [...foodOriginalData];
+  let a = [...foodoriginaldata];
   a.sort((p1,p2)=> p1.cab - p2.cab)
   console.table(a)
 }
